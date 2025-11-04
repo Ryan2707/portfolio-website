@@ -1,0 +1,30 @@
+* {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Left {
+    display: flex;
+    width: 50%;
+    height: auto;
+    color: white;
+    float: left;
+}
+
+.Right {
+    display: flex;
+    width: 50%;
+    height: 80vh;
+    color: white;
+    float: right;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img {
+    width: 50%;
+    height: 50%;
+    border-radius: 90px;
+}
