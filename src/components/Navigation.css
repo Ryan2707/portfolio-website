@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* === CSS RESET: Zorgt ervoor dat de navigatie strak in de hoek begint === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Belangrijk voor voorspelbare breedtes/hoogtes */
+}
+
+/* === 1. DESKTOP STIJL (Alles boven 992px) === */
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(rgba(0,0,0,0.31), rgba(0,0,0,0.31)), #A601FF;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 65vw; 
+    height: 16vh;
+    max-width: 1200px;
+    /* FIX: Nu de body gereset is, zorgen we alleen voor afstand aan de rechterkant */
+    margin: 0 0 1rem 0; 
+    border-bottom-right-radius: 90px;
+    font-family: 'Inria Serif', serif;
+    font-size: 1.15rem;
+}
+
+.nav-brand a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.75rem;
+    font-weight: 700;
+    font-style: italic;
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-links li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links li a {
+    display: inline-block;
+    width: 75%;
+    padding: 0.7rem 1rem;
+    border: 2px solid #7a00b2;
+    border-radius: 10px;
+    background: #AF5FFF;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.10rem;
+    transition: all 0.15s ease-in-out;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.09);
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.nav-links li a:hover {
+    color: #ffffff;
+    background: #9833E6;
+    border-color: #7a00b2;
+    transform: translateY(-3px);
+}
+
+.nav-links li a:active {
+    transform: translateY(0);
+}
+
+.nav-links li a:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52,152,219,0.14), 0 8px 18px rgba(0,0,0,0.10);
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* === 2. MEDIA QUERY voor TABLETS (Tussen 601px en 992px) === */
+@media screen and (max-width: 992px) {
+    .navigation {
+        width: 90vw;
+        height: auto;
+        padding: 1rem;
+        /* FIX: Geen marge aan de linkerkant */
+        margin: 0 auto 1rem 0; 
+        border-bottom-right-radius: 40px; 
+        font-size: 1rem;
+    }
+
+    .nav-links li a {
+        width: 90%; 
+        padding: 0.6rem 0.8rem;
+        font-size: 1.0rem;
+    }
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* === 3. MEDIA QUERY voor MOBIELE TELEFOONS (Max 600px) === */
+@media screen and (max-width: 600px) {
+    .navigation {
+        width: 100%;
+        height: auto;
+        padding: 1rem 1rem 0.5rem 1rem;
+        flex-direction: column;
+        border-bottom-right-radius: 0;
+        margin: 0; 
+    }
+    
+    .nav-brand {
+        margin-bottom: 0.8rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 95%; 
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+
+    .nav-links li {
+        width: 100%; 
+        flex: 0 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-links li a {
+        width: 100%; 
+        padding: 0.8rem 1rem;
+        font-size: 1.15rem;
+        white-space: normal;
+        text-overflow: clip;
+        overflow: visible;
+    }
+}
