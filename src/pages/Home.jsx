@@ -1,14 +1,19 @@
 import './Home.css'
-import picture from '../assets/20251104_150236.jpg'
+import '../App.css'
+import HomePageTopText from '../components/HomePageText';
+import { HomePageBottomText } from '../components/HomePageText';
+import picture from '../assets/HomePage.jpg';
+
 const Home = () => {
     return (
         <div>
         <section className="Left">
-            <h1>Welcome to My Portfolio</h1>
+        <HomePageTopText title="Ryan Kramer" subtitle="Software Developer" />
+        <HomePageBottomText paragraph="Quality over Quantity. "/>
         </section>
 
         <section className="Right">
-        <img className="img" src={picture} alt="Ryan" />
+        <img src={picture} alt="Home Page" className="home-image"/>
         </section>
         </div>
     );
