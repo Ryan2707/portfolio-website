@@ -15,5 +15,7 @@ const HomePageBottomText = ({paragraph}) => {
       );
 }
 
+
+
 export default HomePageTopText;
 export { HomePageBottomText };

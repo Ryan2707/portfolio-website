@@ -29,6 +29,7 @@ div{
 }
 
 .home-top-text {
+    margin-top: 2rem;
     margin-left: 5rem;
     font-weight: bold;
     color: #ffffff;
@@ -40,13 +41,37 @@ div{
 }
 
 .home-subtitle{
-    font-family: Inter, regular;
-    font-size: 5rem;
+    font-family: Inter;
+    font-weight: 100;
+    font-size: 4.5rem;
 }
 
 .home-bottom-text{
     margin-left: 5rem;
     font-size: 4rem;
-    margin-top: 15rem;
+    margin-top: 10rem;
     color: #fff;
+}
+
+.call-to-action-container {
+    display: flex;
+    gap: 15rem; 
+    margin-left: 5rem;
+    margin-top: 10rem;
+}
+
+.call-to-action {
+    padding: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    font-size: 1.8rem;
+    background: linear-gradient(135deg, #0b1020 0%, #1a1f2f 100%);
+    border-radius: 50px;
+    color: #59FF00;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.call-to-action:hover {
+    transform: translateY(-3px);
 }
