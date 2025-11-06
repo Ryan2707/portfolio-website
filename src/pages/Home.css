@@ -15,7 +15,7 @@
 .Right {
     display: flex;
     width: 50%;
-    height: 80vh;
+    height: auto;
     color: white;
     float: right;
     justify-content: center;
@@ -24,7 +24,9 @@
 }
 
 .img {
-    width: 50%;
-    height: 50%;
-    border-radius: 90px;
+    width: 80%;
+    height: 80%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
