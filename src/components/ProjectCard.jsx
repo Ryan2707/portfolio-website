@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 const ProjectCard = ({ projectTitle, projectImg, ProjectDetailPage }) => {
   return (
     <div className="project-card cursor-pointer">
-      <h3 className="project-title">{projectTitle}</h3>
 
       <Link to={ProjectDetailPage}>
         <img
@@ -12,6 +11,7 @@ const ProjectCard = ({ projectTitle, projectImg, ProjectDetailPage }) => {
           className="project-image"
         />
       </Link>
+      <h3 className="project-title">{projectTitle}</h3>
     </div>
   );
 };

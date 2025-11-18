@@ -63,7 +63,7 @@
 }
 
 .nav-links a:hover {
-  background: linear-gradient(135deg, #ff1e1e, #4b008e);
+  background: linear-gradient(135deg, #0059fffd, #4b008e);
   transform: translateY(-3px);
 }
 
