@@ -1,0 +1,42 @@
+.project-card {
+    margin-top: 5rem;
+    width: 20vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-title {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: white;
+    font-family: Inter, sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.project-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-image {
+    width: 20vw;
+    height: 30vh;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+
+.Projects{
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+    gap: 4rem;
+}

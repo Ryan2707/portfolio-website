@@ -19,7 +19,7 @@ const Home = () => {
          </section>
 
         <section className="Right">
-        <img src={picture} alt="Home Page" className="home-image"/>
+        <img src={picture} alt="Home Page" className="home-image" loading="eager"/>
         </section>
         </div>
     );
