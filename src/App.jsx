@@ -5,6 +5,8 @@ import Home from './pages/Home'
 import AboutMe from './pages/About me'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
+import RocketBoost from './pages/rocketboost'
+
 
 function App() {
     return (
@@ -17,6 +19,8 @@ function App() {
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
+                
+                { <RocketBoost /> }
             </div>
         </BrowserRouter>
     );

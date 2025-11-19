@@ -1,7 +1,7 @@
 import ProjectCard from "../components/ProjectCard";
 import './ProjectsCard.css';
 import RocketBoost from '../assets/RocketboostCard.png';
-
+import Construction from '../assets/Untitled.jpg';
 const Projects = () => {
     return (
         <div>
@@ -10,25 +10,25 @@ const Projects = () => {
                     className='RocketBoost' 
                     projectTitle='Rocket Boost' 
                     projectImg={RocketBoost}
-                    ProjectDetailPage="/src/pages/rocketboost.jsx"
+                    ProjectDetailPage="./rocketboost.jsx"
                 />
 
                 <ProjectCard 
-                    className='2'
-                    projectTitle='2'
-                    projectImg=""
+                    className=''
+                    projectTitle='?'
+                    projectImg= {Construction}
                     ProjectDetailPage=""
                 />
 
                 <ProjectCard 
-                    projectTitle='3'
-                    projectImg=""
+                    projectTitle='?'
+                    projectImg= {Construction}
                     ProjectDetailPage=""
                 />
 
                 <ProjectCard 
-                    projectTitle='4'
-                    projectImg=""
+                    projectTitle='?'
+                    projectImg= {Construction}
                     ProjectDetailPage=""
                 />
             </section>

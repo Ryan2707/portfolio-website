@@ -1,5 +1,5 @@
 .project-card {
-    margin-top: 5rem;
+    margin-top: 15rem;
     width: 20vw;
     height: 30vh;
     display: flex;
@@ -10,7 +10,7 @@
 }
 
 .project-title {
-    margin-bottom: 1rem;
+    margin-top: 1rem;
     text-align: center;
     color: white;
     font-family: Inter, sans-serif;

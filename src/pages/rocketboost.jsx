@@ -1,10 +1,12 @@
-const RocketBoostProject = () => {
-    return (
+import "../data/Projects.js"
+import '../components/Project detial.jsx'
+
+const projectdetail = () => {
+    return (  
         <div>
-            <h1>Rocket Boost Project</h1>
-            <p>Details about the Rocket Boost project will go here.</p>
+            
         </div>
     );
 }
  
-export default RocketBoostProject;
+export default projectdetail;
