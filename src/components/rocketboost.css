@@ -1,0 +1,70 @@
+.whole {
+  display: flex;
+  min-height: 70vh;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  color: white;
+}
+.leftie {
+  flex: 0 0 50%;
+  flex-basis: 50%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+}
+.rightie {
+  flex: 0 0 50%;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  align-self: stretch;
+}
+
+.rightie img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: auto;
+}
+
+.leftie h2 {
+  font-size: 3rem;
+  margin: 0 0 0.5rem;
+  line-height: 1.05;
+  margin-bottom: 5rem;
+}
+
+.leftie p {
+  font-size: 2.5rem;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* responsive: keep columns side-by-side but reduce typography on very small screens */
+@media (max-width: 700px) {
+  .leftie,
+  .rightie {
+    /* keep 50/50 even on small screens */
+    flex: 0 0 50%;
+  }
+  .whole {
+    /* ensure horizontal scrolling is available on tiny viewports */
+    overflow-x: auto;
+  }
+  .leftie h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+  .leftie p {
+    font-size: 1.6rem;
+  }
+}

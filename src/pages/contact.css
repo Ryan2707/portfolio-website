@@ -1,0 +1,122 @@
+:root{
+  --bg:#000000;
+  --muted:#ffffff;
+  --accent:#ffffff;
+  --danger:#b91c1c;
+  --radius:8px;
+  --gap:2rem;
+}
+
+.contact-page{
+  display:flex;
+  gap: 2rem;
+  justify-content:center;
+  align-items:flex-start;
+  max-width:980px;
+  margin: 20rem;
+  margin-top: 5rem;
+  padding:1.5rem;
+  box-sizing:border-box;
+}
+
+.contact-left.contact-form.large{
+  flex: 3; 
+  gap: 5rem;
+  background:var(--bg);
+  max-width: 780px;
+  padding:1.25rem;
+  border-radius:var(--radius);
+  box-shadow:0 6px 18px rgba(15,23,42,0.06);
+}
+
+.contact-right.contact-info{
+  flex:0.55;
+  max-width:260px;
+  background:var(--bg);
+  padding:1.25rem;
+  border-radius:var(--radius);
+  box-shadow:0 6px 18px rgba(15,23,42,0.04);
+}
+
+.form-group{
+  margin-bottom:1rem;
+}
+.form-group label{
+  display:block;
+  margin-bottom:0.35rem;
+  color: white;
+  font-weight:600;
+  font-size:0.95rem;
+}
+input[type="text"],
+input[type="email"],
+textarea{
+  width:100%;
+  padding:0.65rem 0.75rem;
+  border:1px solid #e5e7eb;
+  border-radius:6px;
+  font-size:1rem;
+  color: black;
+  background:#fff;
+  box-sizing:border-box;
+  transition:box-shadow .15s, border-color .15s;
+}
+input:focus, textarea:focus{
+  outline:none;
+  border-color:var(--accent);
+  box-shadow:0 0 0 4px rgba(37,99,235,0.08);
+}
+
+textarea{
+  min-height:260px;
+  resize:vertical;
+}
+
+button[type="submit"]{
+  display:inline-block;
+  padding:0.6rem 1rem;
+  background:#0059fffd;
+  color:#fff;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:600;
+  transition:opacity .12s, transform .08s, filter .08s;
+}
+button[type="submit"]:not([disabled]):hover{
+  filter:brightness(.95);
+}
+button[disabled]{
+  opacity:0.6;
+  cursor:not-allowed;
+}
+button[type="submit"]:not([disabled]):active{
+  transform:translateY(1px);
+}
+
+.error{
+  color:var(--danger);
+  font-size:0.9rem;
+  margin-top:0.35rem;
+}
+.success{
+  margin-top:1rem;
+  color:green;
+  font-weight:600;
+}
+
+.contact-info p{ margin:0.45rem 0; color:var(--muted); }
+.contact-info a{ color:var(--accent); text-decoration:none; }
+.contact-info a:hover{ text-decoration:underline; }
+
+.social-links ul{
+  list-style:none;
+  padding:0;
+  margin:0.35rem 0 0 0;
+  display:flex;
+  flex-direction:column;
+  gap:0.35rem;
+}
+.social-links a{ color:var(--muted); }
+
+

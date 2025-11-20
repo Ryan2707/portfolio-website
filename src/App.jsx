@@ -18,9 +18,8 @@ function App() {
                     <Route path="/about" element={<AboutMe />} />
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/rocketboost" element={<RocketBoost />} />
                 </Routes>
-                
-                { <RocketBoost /> }
             </div>
         </BrowserRouter>
     );

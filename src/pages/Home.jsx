@@ -7,7 +7,7 @@ import CallToAction from '../components/Call-To-Action';
 
 const Home = () => {
     return (
-        <div>
+        <div className='HomePage'>
         <section className="Left">
             <HomePageTopText title="Ryan Kramer" subtitle="Software Developer" />
             <HomePageBottomText paragraph="Quality over Quantity. "/>
