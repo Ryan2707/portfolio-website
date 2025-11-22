@@ -127,13 +127,7 @@ const Contact = () => {
             </p>
             <ul>
               <li>
-                <a
-                  href="https://github.com/Ryan2707"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                </a>
+                <a href="https://github.com/Ryan2707" target="_blank" rel="noopener noreferrer">GitHub</a>
               </li>
             </ul>
           </div>

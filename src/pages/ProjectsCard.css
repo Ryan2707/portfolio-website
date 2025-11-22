@@ -10,7 +10,6 @@
 }
 
 .project-title {
-    margin-top: 1rem;
     text-align: center;
     color: white;
     font-family: Inter, sans-serif;
@@ -40,3 +39,4 @@
     justify-content: center;
     gap: 4rem;
 }
+

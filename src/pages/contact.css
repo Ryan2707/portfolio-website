@@ -7,19 +7,21 @@
     align-items: center;
     width: 100%;
     margin-top: 5rem;
-    gap: 3rem;
+    gap: 0rem;
 }
 
 .ContactLeft {
     width: 55%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     background: #000;
-    max-width: 720px;
+    max-width: 60rem;
+    height: 40rem;
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+    margin-right: 10rem;
+    font-size: 2rem;
 }
 
 .ContactRight {
@@ -28,12 +30,13 @@
     flex-direction: column;
     background: #000;
     max-width: 620px;
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 6px 18px rgba(15,23,42,0.04);
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
+    font-size: 3rem;
 }
 
 .FormGroup {
@@ -112,7 +115,7 @@
     font-weight: 600;
 }
 .ContactInfo p {
-    margin: 0.45rem 0;
+    margin-bottom: 2rem;
     color: #fff;
 }
 .ContactInfo a {
@@ -125,13 +128,21 @@
 .SocialLinks ul {
     list-style: none;
     padding: 0;
-    margin: 0.35rem 0 0 0;
+    margin: 0;
     display: flex;
-    flex-direction: column;
     gap: 0.35rem;
 }
 .SocialLinks a {
     color: #fff;
 }
 
+.ContactLeft h3{
+    margin-bottom: 1rem;
+    color: #fff;
+}
 
+
+.ContactInfo h2 {
+    margin-bottom: 1rem;
+    color: #fff;
+}
