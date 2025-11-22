@@ -44,11 +44,11 @@ const Contact = () => {
   const isValid = Object.keys(validate(form)).length === 0;
 
   return (
-    <div className="contact-page">
-      <section className="contact-left contact-form large">
+    <div className="ContactPage">
+      <section className="ContactLeft">
         <h3>Send a message</h3>
         <form onSubmit={handleSubmit} noValidate>
-          <div className="form-group">
+          <div className="FormGroup">
             <label htmlFor="name">Name</label>
             <input
               id="name"
@@ -57,11 +57,12 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="Your name"
+              className="FormInput"
             />
-            {errors.name && <div className="error">{errors.name}</div>}
+            {errors.name && <div className="Error">{errors.name}</div>}
           </div>
 
-          <div className="form-group">
+          <div className="FormGroup">
             <label htmlFor="email">Email</label>
             <input
               id="email"
@@ -70,11 +71,12 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="you@example.com"
+              className="FormInput"
             />
-            {errors.email && <div className="error">{errors.email}</div>}
+            {errors.email && <div className="Error">{errors.email}</div>}
           </div>
 
-          <div className="form-group">
+          <div className="FormGroup">
             <label htmlFor="message">Message</label>
             <textarea
               id="message"
@@ -83,22 +85,23 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="Write your message..."
+              className="FormTextarea"
             />
-            {errors.message && <div className="error">{errors.message}</div>}
+            {errors.message && <div className="Error">{errors.message}</div>}
           </div>
 
-          <button type="submit" disabled={!isValid}>
+          <button type="submit" disabled={!isValid} className="SubmitButton">
             Send
           </button>
           {submitted && (
-            <div className="success">
+            <div className="Success">
               Thanks! Your message has been sent (check console.log).
             </div>
           )}
         </form>
       </section>
 
-      <section className="contact-right contact-info">
+      <section className="ContactRight ContactInfo">
         <h2>Contact</h2>
         <p>
           If you have questions or want to collaborate, feel free to reach out
@@ -118,7 +121,7 @@ const Contact = () => {
             <strong>Location:</strong> Netherlands
           </p>
 
-          <div className="social-links">
+          <div className="SocialLinks">
             <p>
               <strong>Social:</strong>
             </p>
