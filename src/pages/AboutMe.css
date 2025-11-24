@@ -3,11 +3,11 @@ width: 50%;
 margin-top: 5rem;
 margin-left: 5rem;
 color: white;
-font-family: Inter;
+font-family: 'Inter', sans-serif;
 font-weight: 100;
-font-size: 2rem;
+font-size: 1.8rem;  
 }
 
-.paragraph2, .paragraph3 {
-    margin-top: 5rem;
+.paragraph2, .paragraph3, .paragraph4 {
+    margin-top: 2rem;
 }

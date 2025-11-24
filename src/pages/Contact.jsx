@@ -123,13 +123,11 @@ const Contact = () => {
 
           <div className="SocialLinks">
             <p>
-              <strong>Social:</strong>
+              <strong>Social:</strong>{" "}
+              <a href="https://github.com/Ryan2707" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
             </p>
-            <ul>
-              <li>
-                <a href="https://github.com/Ryan2707" target="_blank" rel="noopener noreferrer">GitHub</a>
-              </li>
-            </ul>
           </div>
         </div>
       </section>

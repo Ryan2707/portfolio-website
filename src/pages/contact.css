@@ -3,40 +3,45 @@
     padding: 0 5%;
     box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap; /* allow columns to wrap on narrow screens */
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     margin-top: 5rem;
-    gap: 0rem;
+    gap: clamp(0.5rem, 3vw, 2.5rem); /* responsive gap between columns */
 }
 
+/* Left column becomes at most 55% but can be 100% on small screens */
 .ContactLeft {
-    width: 55%;
+    width: min(100%, 55%);
     display: flex;
     flex-direction: column;
     background: #000;
     max-width: 60rem;
-    height: 40rem;
-    padding: 1.5rem;
+    /* remove fixed height so content can grow/shrink */
+    padding: clamp(1rem, 2vw, 1.5rem);
     border-radius: 8px;
     box-shadow: 0 6px 18px rgba(15,23,42,0.06);
-    margin-right: 10rem;
-    font-size: 2rem;
+    /* remove big right margin in favor of gap on the container */
+    font-size: clamp(1rem, 1.6vw, 2rem);
+    box-sizing: border-box;
 }
 
+/* Right column becomes at most 40% but can be 100% on small screens */
 .ContactRight {
-    width: 40%;
+    width: min(100%, 40%);
     display: flex;
     flex-direction: column;
     background: #000;
     max-width: 620px;
-    padding: 2rem;
+    padding: clamp(0.75rem, 2.5vw, 2rem);
     border-radius: 8px;
     box-shadow: 0 6px 18px rgba(15,23,42,0.04);
     align-items: center;
     justify-content: center;
     text-align: left;
-    font-size: 3rem;
+    font-size: clamp(0.95rem, 1.6vw, 1.4rem);
+    box-sizing: border-box;
 }
 
 .FormGroup {
@@ -47,14 +52,14 @@
     margin-bottom: 0.35rem;
     color: #fff;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: clamp(0.8rem, 0.9vw, 0.95rem);
 }
 .FormInput {
     width: 100%;
-    padding: 0.65rem 0.75rem;
+    padding: clamp(0.5rem, 0.9vw, 0.75rem);
     border: 1px solid #e5e7eb;
     border-radius: 6px;
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 1vw, 1rem);
     color: #000;
     background: #fff;
     box-sizing: border-box;
@@ -67,12 +72,12 @@
 }
 .FormTextarea {
     width: 100%;
-    min-height: 260px;
+    min-height: clamp(160px, 30vh, 260px);
     resize: vertical;
-    padding: 0.65rem 0.75rem;
+    padding: clamp(0.5rem, 0.9vw, 0.75rem);
     border: 1px solid #e5e7eb;
     border-radius: 6px;
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 1vw, 1rem);
     color: #000;
     background: #fff;
     box-sizing: border-box;
@@ -85,7 +90,7 @@
 }
 .SubmitButton {
     display: inline-block;
-    padding: 0.6rem 1rem;
+    padding: clamp(0.45rem, 0.9vw, 0.6rem) clamp(0.8rem, 1.5vw, 1rem);
     background: #0059fffd;
     color: #fff;
     border: none;
@@ -93,6 +98,7 @@
     cursor: pointer;
     font-weight: 600;
     transition: opacity .12s, transform .08s, filter .08s;
+    font-size: clamp(0.9rem, 1vw, 1rem);
 }
 .SubmitButton:not([disabled]):hover {
     filter: brightness(.95);
@@ -131,6 +137,7 @@
     margin: 0;
     display: flex;
     gap: 0.35rem;
+    flex-wrap: wrap; /* allow icons to wrap on small screens */
 }
 .SocialLinks a {
     color: #fff;
@@ -139,10 +146,11 @@
 .ContactLeft h3{
     margin-bottom: 1rem;
     color: #fff;
+    font-size: clamp(1.1rem, 1.8vw, 1.4rem);
 }
-
 
 .ContactInfo h2 {
     margin-bottom: 1rem;
     color: #fff;
+    font-size: clamp(1.25rem, 2vw, 1.6rem);
 }

@@ -10,7 +10,7 @@ import RocketBoost from './pages/rocketboost'
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename='/Portfolio-Website'>
             <div className="app-container">
                 <Navigation />
                 <Routes>

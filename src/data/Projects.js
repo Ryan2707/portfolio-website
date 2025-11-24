@@ -1,8 +1,10 @@
+import RocketboostDetail from "../assets/RocketboostDetail.png";
+
 const ProjectInfo = [
   {
     id: 1,
     title: "Rocket Boost",
-    image: "",
+    image: RocketboostDetail,
     description:
       "A Unity C# learning project featuring a controllable rocket, dynamic obstacles, and multiple levels. Built with the help of a Udemy course to explore game physics, movement, and level design.",
   },
