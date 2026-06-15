@@ -1,9 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inria+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600&family=Share+Tech+Mono&display=swap');
 
-
-#root {
+.app-container {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+}
+
+.page-content {
+  flex: 1;
+  padding: 2rem clamp(1.25rem, 5vw, 4rem);
+  max-width: 1200px;
+  margin: 0 auto;
   width: 100%;
-  background: linear-gradient(122deg, #0059fffd 50%, #000000 100%);
-  overflow-x: hidden;
+}
+
+.cyber-line {
+  display: inline-block;
+  position: relative;
+}
+.cyber-line::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--clr-purple), var(--clr-green));
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--clr-green);
+  opacity: 0.7;
+}
+
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--clr-purple-2);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+img {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
 }

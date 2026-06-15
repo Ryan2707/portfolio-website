@@ -1,0 +1,196 @@
+.contact {
+  padding: 4rem clamp(1.25rem, 5vw, 4rem);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-header {
+  margin-bottom: 3rem;
+}
+
+.contact-header h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 0.75rem;
+  color: var(--clr-text);
+}
+
+.contact-header h1 span {
+  color: var(--clr-purple-2);
+}
+
+.contact-header p {
+  color: var(--clr-text-muted);
+  line-height: 1.8;
+  max-width: 650px;
+}
+
+/* MAIN CARD */
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.02);
+
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+
+  padding: 2rem;
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* PROFILE */
+
+.contact-profile {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--clr-border);
+}
+
+.contact-profile h2 {
+  font-size: 2rem;
+  color: var(--clr-text);
+  margin-bottom: 0.75rem;
+}
+
+.contact-profile p {
+  color: var(--clr-text-muted);
+  line-height: 1.8;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+
+  border-radius: 999px;
+
+  background: var(--clr-green-dim);
+  border: 1px solid rgba(0, 255, 160, 0.2);
+
+  color: var(--clr-green);
+
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* SECTIONS */
+
+.contact-section {
+  margin-bottom: 2rem;
+}
+
+.contact-section:last-child {
+  margin-bottom: 0;
+}
+
+.contact-section h3 {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+
+  color: var(--clr-green);
+
+  margin-bottom: 1rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.contact-section h3::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--clr-border);
+}
+
+/* LINKS */
+
+.contact-link {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.25rem;
+
+  padding: 1rem;
+
+  margin-bottom: 0.75rem;
+
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+
+  text-decoration: none;
+
+  transition: all var(--transition);
+}
+
+.contact-link:hover {
+  border-color: rgba(124, 77, 255, 0.4);
+  background: var(--clr-purple-dim);
+
+  transform: translateY(-2px);
+}
+
+.contact-link span {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+
+  color: var(--clr-text-dim);
+}
+
+.contact-link strong {
+  color: var(--clr-text);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* OPPORTUNITIES */
+
+.opportunity-list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.opportunity-list li {
+  color: var(--clr-text-muted);
+}
+
+.opportunity-list li::before {
+  content: '✓ ';
+  color: var(--clr-green);
+  font-weight: bold;
+}
+
+/* FOCUS */
+
+.focus-text {
+  color: var(--clr-text-muted);
+  line-height: 1.8;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 2rem 1.25rem;
+  }
+
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .contact-profile h2 {
+    font-size: 1.6rem;
+  }
+}

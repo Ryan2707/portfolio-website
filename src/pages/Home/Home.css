@@ -1,0 +1,220 @@
+
+.home {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  padding: 4rem clamp(1.25rem, 5vw, 4rem);
+  position: relative;
+  overflow: hidden;
+}
+
+.home::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 70% 50%, rgba(124, 77, 255, 0.08) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 40% at 20% 80%, rgba(0, 255, 160, 0.05) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+.home-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--clr-green);
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.home-eyebrow::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: var(--clr-green);
+}
+
+.home-title {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 0.5rem;
+  color: var(--clr-text);
+}
+
+.home-title-accent {
+  display: block;
+  background: linear-gradient(135deg, var(--clr-purple), var(--clr-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.home-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  color: var(--clr-text-muted);
+  font-weight: 300;
+  margin-bottom: 2rem;
+  font-family: var(--font-mono);
+}
+
+.home-subtitle span {
+  color: var(--clr-purple-2);
+}
+
+.home-desc {
+  font-size: 1.05rem;
+  color: var(--clr-text-muted);
+  line-height: 1.75;
+  max-width: 480px;
+  margin-bottom: 2.5rem;
+}
+
+.home-ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: all var(--transition);
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--clr-purple);
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.btn-primary:hover {
+  background: var(--clr-purple-2);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--clr-green);
+  border: 1px solid var(--clr-green);
+}
+
+.btn-outline:hover {
+  background: var(--clr-green-dim);
+  transform: translateY(-2px);
+}
+
+.home-image-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.home-image-ring {
+  position: relative;
+  width: clamp(220px, 35vw, 420px);
+  aspect-ratio: 1;
+}
+
+.home-image-ring::before,
+.home-image-ring::after {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+}
+
+.home-image-ring::before {
+  border: 1px solid rgba(124, 77, 255, 0.3);
+}
+
+.home-image-ring::after {
+  inset: -18px;
+  border: 1px solid rgba(0, 255, 160, 0.15);
+}
+
+.home-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(124, 77, 255, 0.4);
+  filter: brightness(0.9) contrast(1.05);
+}
+
+.home-stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--clr-border);
+}
+
+.home-stat-num {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--clr-purple-2);
+}
+
+.home-stat-label {
+  font-size: 0.75rem;
+  color: var(--clr-text-dim);
+  font-family: var(--font-mono);
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 2rem 1.25rem;
+  }
+  .home-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+  .home-image-wrap {
+    order: -1;
+  }
+  .home-image-ring {
+    width: min(260px, 70vw);
+  }
+  .home-eyebrow {
+    justify-content: center;
+  }
+  .home-ctas {
+    justify-content: center;
+  }
+  .home-stats {
+    justify-content: center;
+  }
+  .home-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
