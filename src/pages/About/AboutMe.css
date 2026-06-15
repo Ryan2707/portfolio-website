@@ -4,6 +4,26 @@
   margin: 0 auto;
 }
 
+@media (min-width: 2200px) {
+  .about {
+    max-width: 1600px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr 500px;
+  }
+}
+
+@media (min-width: 3400px) {
+  .about {
+    max-width: 1900px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr 600px;
+  }
+}
+
 .about-header {
   margin-bottom: 3.5rem;
 }

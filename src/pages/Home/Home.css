@@ -28,6 +28,33 @@
   width: 100%;
   position: relative;
 }
+@media (min-width: 2200px) {
+  .home-grid {
+    max-width: 1600px;
+  }
+
+  .home-image-ring {
+    width: clamp(280px, 35vw, 520px);
+  }
+
+  .home-desc {
+    max-width: 620px;
+  }
+}
+
+@media (min-width: 3400px) {
+  .home-grid {
+    max-width: 1900px;
+  }
+
+  .home-image-ring {
+    width: clamp(320px, 35vw, 650px);
+  }
+
+  .home-desc {
+    max-width: 750px;
+  }
+}
 
 .home-eyebrow {
   font-family: var(--font-mono);
