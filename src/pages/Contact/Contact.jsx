@@ -72,17 +72,6 @@ const Contact = () => {
         </div>
 
         <div className="contact-section">
-          <h3>Currently Looking For</h3>
-
-          <ul className="opportunity-list">
-            <li>Internships</li>
-            <li>Collaborations</li>
-            <li>Real-world development experience</li>
-            <li>Networking opportunities</li>
-          </ul>
-        </div>
-
-        <div className="contact-section">
           <h3>Current Focus</h3>
 
           <p className="focus-text">
