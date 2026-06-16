@@ -1,20 +1,20 @@
-import './contact.css';
+import "./contact.css";
 
 const Contact = () => {
   return (
     <main className="contact">
       <header className="contact-header">
-        <span className="section-label">// get in touch</span>
+        <span className="section-label">// contact</span>
 
         <h1>
-          Let's <span>Connect</span>
+          Neem <span>Contact Op</span>
         </h1>
 
         <p>
-          Interested in working together, discussing a project, or simply
-          connecting? Feel free to reach out through any of the channels below.
-          I'm always open to opportunities, collaborations, and conversations
-          about technology.
+          Heb je een vraag, een idee voor een project of wil je gewoon contact
+          opnemen? Stuur gerust een bericht. Ik sta altijd open voor nieuwe
+          ervaringen, interessante gesprekken en kansen om mezelf verder te
+          ontwikkelen als developer.
         </p>
       </header>
 
@@ -22,23 +22,23 @@ const Contact = () => {
         <div className="contact-profile">
           <h2>Ryan Kramer</h2>
 
-          <p>17 y/o Developer</p>
-          <p>Based in the Netherlands 🇳🇱</p>
           <p>Software Development Student</p>
+          <p>Techniek College Rotterdam</p>
+          <p>Web, Mobile & Game Development</p>
 
           <div className="status-badge">
-            ● Open to Opportunities
+            ● Open voor nieuwe kansen
           </div>
         </div>
 
         <div className="contact-section">
-          <h3>Contact</h3>
+          <h3>Contactgegevens</h3>
 
           <a
             href="mailto:Ryan270708@gmail.com"
             className="contact-link"
           >
-            <span>Email</span>
+            <span>E-mail</span>
             <strong>Ryan270708@gmail.com</strong>
           </a>
 
@@ -46,7 +46,7 @@ const Contact = () => {
             href="tel:+31611246100"
             className="contact-link"
           >
-            <span>Phone</span>
+            <span>Telefoon</span>
             <strong>+31 6 11246100</strong>
           </a>
 
@@ -57,7 +57,7 @@ const Contact = () => {
             className="contact-link"
           >
             <span>LinkedIn</span>
-            <strong>View Profile ↗</strong>
+            <strong>Profiel bekijken ↗</strong>
           </a>
 
           <a
@@ -72,12 +72,13 @@ const Contact = () => {
         </div>
 
         <div className="contact-section">
-          <h3>Current Focus</h3>
+          <h3>Waar ik momenteel mee bezig ben</h3>
 
           <p className="focus-text">
-            Currently expanding my knowledge of TypeScript, PostgreSQL, and
-            Prisma while exploring more scalable approaches to full-stack
-            application development.
+            Op dit moment verdiep ik mij verder in TypeScript, PostgreSQL en
+            Prisma. Daarnaast blijf ik werken aan webapplicaties, mobiele apps
+            met React Native en andere projecten waarmee ik mijn vaardigheden
+            als developer verder kan uitbreiden.
           </p>
         </div>
       </section>

@@ -6,6 +6,7 @@ import AboutMe from './pages/About/AboutMe';
 import Projects from './pages/Projects/Projects';
 import Contact from './pages/Contact/Contact';
 import RocketBoost from './components/RocketBoost';
+import CodeCampus from './components/CodeCampus';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/rocketboost" element={<RocketBoost />} />
+          <Route path="/codecampus" element={<CodeCampus />} />
         </Routes>
       </div>
     </BrowserRouter>

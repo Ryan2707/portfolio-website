@@ -280,3 +280,29 @@
     margin-bottom: 2rem;
   }
 }
+
+/* DATABASES */
+
+.skill-tag.database {
+  color: #4fc3f7;
+  border-color: rgba(79, 195, 247, 0.3);
+  background: rgba(79, 195, 247, 0.08);
+}
+
+.skill-tag.database:hover {
+  border-color: rgba(79, 195, 247, 0.6);
+  transform: translateY(-2px);
+}
+
+/* LEARNING */
+
+.skill-tag.learning {
+  color: #ff79c6;
+  border-color: rgba(255, 121, 198, 0.3);
+  background: rgba(255, 121, 198, 0.08);
+}
+
+.skill-tag.learning:hover {
+  border-color: rgba(255, 121, 198, 0.6);
+  transform: translateY(-2px);
+}

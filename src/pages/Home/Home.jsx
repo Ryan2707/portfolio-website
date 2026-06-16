@@ -20,33 +20,46 @@ const Home = () => {
           </p>
 
           <p className="home-desc">
-            Software Development student from the Netherlands building modern
-            web and mobile applications with React, Next.js, Node.js, MongoDB,
-            and React Native. Passionate about creating user-focused experiences
-            and continuously learning new technologies.
+            Hoi! Ik ben Ryan, een 17-jarige Software Development student aan het
+            Techniek College Rotterdam.
+            <br />
+            <br />
+            Mijn interesse in programmeren begon vanuit nieuwsgierigheid naar hoe
+            games werken. Inmiddels bouw ik websites, mobiele apps en andere
+            digitale projecten met technologieën zoals React, Next.js, Node.js,
+            MongoDB en React Native.
+            <br />
+            <br />
+            Ik leer het liefst door te bouwen, te experimenteren en nieuwe ideeën
+            uit te proberen. Voor mij is programmeren niet alleen iets wat ik op
+            school doe, maar ook een manier om mezelf uit te dagen en steeds iets
+            nieuws te leren.
           </p>
 
           <div className="home-ctas">
             <Link to="/projects" className="btn btn-primary">
-              View Projects
+              Bekijk Projecten
             </Link>
+
             <Link to="/contact" className="btn btn-outline">
-              Get in Touch
+              Neem Contact Op
             </Link>
           </div>
 
           <div className="home-stats">
             <div>
-              <div className="home-stat-num">17</div>
-              <div className="home-stat-label">Years old</div>
+              <div className="home-stat-num">1 7</div>
+              <div className="home-stat-label">Jaar oud</div>
             </div>
+
             <div>
-              <div className="home-stat-num">Full-Stack</div>
-              <div className="home-stat-label">Development</div>
+              <div className="home-stat-num">2+</div>
+              <div className="home-stat-label">Jaar ervaring</div>
             </div>
+
             <div>
               <div className="home-stat-num">NL</div>
-              <div className="home-stat-label">Based in</div>
+              <div className="home-stat-label">Nederland</div>
             </div>
           </div>
         </div>

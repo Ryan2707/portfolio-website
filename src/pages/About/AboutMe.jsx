@@ -7,76 +7,116 @@ const frontendSkills = [
   "HTML5",
   "CSS3",
   "Tailwind CSS",
+  "Responsive Design",
+  "React Router",
 ];
 
 const backendSkills = [
   "Node.js",
   "Express.js",
-  "MongoDB",
-  "Mongoose",
   "Auth.js",
+  "JWT",
   "REST APIs",
+  "CRUD Operations",
+  "Role-Based Access",
+  "Middleware",
 ];
 
-const mobileSkills = ["React Native"];
+const databaseSkills = [
+  "MongoDB",
+  "MongoDB Atlas",
+  "Mongoose",
+];
 
-const gameSkills = ["Unity", "C#", "Godot", "GDScript"];
+const mobileSkills = [
+  "React Native",
+  "Expo",
+  "Navigation",
+  "AsyncStorage",
+];
 
-const toolSkills = ["Git", "GitHub", "VS Code", "Figma", "MongoDB Atlas"];
+const gameSkills = [
+  "Unity",
+  "C#",
+  "Godot",
+  "GDScript",
+];
+
+const toolSkills = [
+  "Git",
+  "GitHub",
+  "VS Code",
+  "Figma",
+  "Postman",
+];
+
+const learningSkills = [
+  "TypeScript",
+  "PostgreSQL",
+  "Prisma ORM",
+];
 
 const AboutMe = () => {
   return (
     <main className="about">
       <header className="about-header">
-        <span className="section-label">// about me</span>
+        <span className="section-label">// over mij</span>
+
         <h1>
-          Who <span>I Am</span>
+          Wie <span>Ik Ben</span>
         </h1>
       </header>
 
       <div className="about-grid">
         <div className="about-bio">
           <p>
-            Hey! I'm <strong>Ryan</strong>, a 17-year-old Software Development
-            student from the Netherlands with nearly three years of programming
-            experience.
+            Hoi! Ik ben <strong>Ryan</strong>, een 17-jarige Software
+            Development student aan het Techniek College Rotterdam.
           </p>
 
           <p>
-            My main focus is{" "}
-            <span className="about-highlight">full-stack development</span>. I
-            build modern web applications using React, Next.js, Node.js,
-            Express.js, MongoDB, and Auth.js while creating experiences that are
-            both functional and enjoyable to use.
+            Mijn interesse in programmeren begon doordat ik nieuwsgierig was
+            naar hoe games eigenlijk werken. Wat begon als interesse groeide al
+            snel uit tot een hobby waarbij ik niet alleen wilde begrijpen hoe
+            software werkt, maar het ook zelf wilde bouwen.
           </p>
 
           <p>
-            Besides web development, I also work with{" "}
-            <span className="about-highlight">mobile and game development</span>
-            . I build mobile applications using React Native and create games
-            using Unity, C#, Godot, and GDScript.
+            Ik leer het liefst door dingen uit te proberen. In plaats van alleen
+            theorie te lezen, start ik graag een project om nieuwe technieken te
+            ontdekken en te zien wat er mogelijk is. Voor mij is programmeren
+            een combinatie van creativiteit, probleemoplossing en continu
+            blijven leren.
           </p>
 
           <p>
-            What I enjoy most about programming is solving problems, learning
-            new technologies, and turning ideas into real projects. I'm always
-            looking for opportunities to improve my skills and gain hands-on
-            experience.
+            Tijdens mijn opleiding ligt de focus vooral op frontend
+            development, maar inmiddels bouw ik ook backend systemen, mobiele
+            applicaties met React Native en experimenteer ik met game
+            development. Ik vind het leuk om ideeën om te zetten naar iets dat
+            daadwerkelijk werkt en gebruikt kan worden.
+          </p>
+
+          <p>
+            Buiten programmeren besteed ik mijn tijd aan gamen, basketball,
+            sporten en tijd doorbrengen met vrienden. Die afwisseling zorgt
+            ervoor dat ik altijd met frisse energie aan nieuwe projecten kan
+            werken.
           </p>
 
           <blockquote className="about-quote">
-            "The best way to learn is by building."
+            "De beste manier om te leren is door te bouwen."
           </blockquote>
 
           <div className="about-focus">
-            <h3>Current Focus</h3>
+            <h3>Huidige Focus</h3>
 
             <ul className="interest-list">
               <li>TypeScript</li>
               <li>PostgreSQL</li>
               <li>Prisma ORM</li>
-              <li>Full-stack architecture</li>
-              <li>Authentication & security</li>
+              <li>Software Architectuur</li>
+              <li>Authenticatie & Beveiliging</li>
             </ul>
           </div>
         </div>
@@ -86,18 +126,25 @@ const AboutMe = () => {
 
           <div className="dev-profile">
             <p>
-              <strong>17 y/o developer</strong>
+              <strong>17-jarige Software Developer</strong>
             </p>
 
-            <p>Based in the Netherlands 🇳🇱</p>
+            <p>📍 Nederland</p>
 
-            <p>Software Development Student</p>
+            <p>🎓 Techniek College Rotterdam</p>
 
-            <p>Building web, mobile & game projects</p>
+            <p>💻 Software Development Student</p>
+
+            <p>🌐 Webapplicaties</p>
+
+            <p>📱 Mobiele Apps</p>
+
+            <p>🎮 Games & Prototypes</p>
           </div>
 
           <div className="skill-group">
             <h3>Frontend</h3>
+
             <div className="skill-tags">
               {frontendSkills.map((skill) => (
                 <span key={skill} className="skill-tag frontend">
@@ -109,6 +156,7 @@ const AboutMe = () => {
 
           <div className="skill-group">
             <h3>Backend</h3>
+
             <div className="skill-tags">
               {backendSkills.map((skill) => (
                 <span key={skill} className="skill-tag backend">
@@ -119,7 +167,20 @@ const AboutMe = () => {
           </div>
 
           <div className="skill-group">
+            <h3>Databases</h3>
+
+            <div className="skill-tags">
+              {databaseSkills.map((skill) => (
+                <span key={skill} className="skill-tag database">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="skill-group">
             <h3>Mobile</h3>
+
             <div className="skill-tags">
               {mobileSkills.map((skill) => (
                 <span key={skill} className="skill-tag mobile">
@@ -131,6 +192,7 @@ const AboutMe = () => {
 
           <div className="skill-group">
             <h3>Game Development</h3>
+
             <div className="skill-tags">
               {gameSkills.map((skill) => (
                 <span key={skill} className="skill-tag game">
@@ -142,9 +204,22 @@ const AboutMe = () => {
 
           <div className="skill-group">
             <h3>Tools</h3>
+
             <div className="skill-tags">
               {toolSkills.map((skill) => (
                 <span key={skill} className="skill-tag tool">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="skill-group">
+            <h3>Momenteel aan het leren</h3>
+
+            <div className="skill-tags">
+              {learningSkills.map((skill) => (
+                <span key={skill} className="skill-tag learning">
                   {skill}
                 </span>
               ))}
