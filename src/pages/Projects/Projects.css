@@ -150,11 +150,26 @@
   letter-spacing: 0.06em;
   padding: 0.2rem 0.6rem;
   border-radius: 2px;
-  background: var(--clr-purple-dim);
-  color: var(--clr-purple-2);
-  border: 1px solid rgba(124, 77, 255, 0.2);
+  border: 1px solid;
 }
 
+.project-tag.frontend {
+  color: var(--clr-purple-2);
+  border-color: rgba(124, 77, 255, 0.3);
+  background: var(--clr-purple-dim);
+}
+
+.project-tag.game {
+  color: #ffb86b;
+  border-color: rgba(255, 184, 107, 0.3);
+  background: rgba(255, 184, 107, 0.08);
+}
+
+.project-tag.tool {
+  color: var(--clr-text-muted);
+  border-color: rgba(136, 146, 164, 0.25);
+  background: rgba(136, 146, 164, 0.06);
+}
 .project-card.coming-soon {
   opacity: 0.55;
   cursor: default;

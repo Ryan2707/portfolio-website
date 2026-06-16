@@ -29,10 +29,13 @@ const CodeCampus = () => {
 
           <div className="project-detail-tags">
             {project.tags.map((tag) => (
-              <span key={tag} className="skill-tag">
-                {tag}
+              <span
+                key={tag.name}
+                className={`skill-tag ${tag.type}`}
+              >
+                {tag.name}
               </span>
-            ))}
+              ))}
           </div>
 
           <p className="project-detail-desc">

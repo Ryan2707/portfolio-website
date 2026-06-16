@@ -22,8 +22,11 @@ const RocketBoost = () => {
 
           <div className="project-detail-tags">
             {(project.tags || []).map((t) => (
-              <span key={t} className="skill-tag game">
-                {t}
+              <span
+                key={t.name}
+                className={`skill-tag ${t.type}`}
+              >
+                {t.name}
               </span>
             ))}
           </div>

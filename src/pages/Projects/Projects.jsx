@@ -75,12 +75,12 @@ const Projects = () => {
 
                   <div className="project-card-tags">
                     {(project.tags || []).map((tag) => (
-                      <span
-                        key={tag}
-                        className="project-tag"
-                      >
-                        {tag}
-                      </span>
+                    <span
+                    key={tag.name}
+                    className={`project-tag ${tag.type}`}
+                    >
+                    {tag.name}
+                    </span>
                     ))}
                   </div>
                 </div>

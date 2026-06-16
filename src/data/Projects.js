@@ -7,7 +7,11 @@ const ProjectInfo = [
     title: 'Rocket Boost',
     image: RocketboostDetail,
 
-    tags: ['Unity', 'C#', 'Game Development'],
+    tags: [
+      { name: 'Unity', type: 'game' },
+      { name: 'C#', type: 'game' },
+      { name: 'Game Development', type: 'game' },
+    ],  
 
     shortDescription:
       'Een Unity-project waarin je een raket bestuurt door verschillende levels terwijl je obstakels ontwijkt.',
@@ -33,14 +37,14 @@ const ProjectInfo = [
   image: CodeCampusDetail,
 
   tags: [
-    'React',
-    'JavaScript',
-    'HTML',
-    'CSS',
-    'Local Storage',
-    'Git',
-    'GitHub'
-  ],
+  { name: 'React', type: 'frontend' },
+  { name: 'JavaScript', type: 'frontend' },
+  { name: 'HTML', type: 'frontend' },
+  { name: 'CSS', type: 'frontend' },
+  { name: 'Local Storage', type: 'tool' },
+  { name: 'Git', type: 'tool' },
+  { name: 'GitHub', type: 'tool' },
+],
 
   github: 'https://github.com/Ryan7931/CodeCampus-Team-JRR',
 
