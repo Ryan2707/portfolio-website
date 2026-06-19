@@ -1,6 +1,6 @@
-import RocketboostDetail from '../assets/RocketboostDetail.png';
-import CodeCampusDetail from '../assets/CodeCampus1.png';
-
+import RocketboostDetail from '../assets/RocketBoostProject/RocketboostDetail.png';
+import CodeCampusDetail from '../assets/CodeCampusProject/CodeCampusDetail.png';
+import WorkoutAppOverview from '../assets/WorkoutAppProject/WorkoutAppOverzicht.png';
 const ProjectInfo = [
   {
     id: 1,
@@ -71,16 +71,26 @@ const ProjectInfo = [
     'Responsive Design',
   ],
 },
-
   {
-    id: 3,
-    title: '???',
-    image: null,
-    tags: [],
-    shortDescription: 'Nieuw project volgt binnenkort.',
-    description: '',
-    purpose: '',
-    learned: [],
+
+  id: 3,
+  title: 'Workout App',
+  image: WorkoutAppOverview,
+
+  tags: [
+],
+
+  github: 'https://github.com/Ryan7931/',
+
+  shortDescription:
+    '',
+
+  description:
+    '',
+  purpose:
+    '',
+  learned: [
+  ],
   },
 
   {

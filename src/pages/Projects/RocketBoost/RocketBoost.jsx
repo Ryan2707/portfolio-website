@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import ProjectInfo from '../data/Projects';
-import '../components/rocketboost.css';
-import { githubLinkRocketBoost } from '../component/links';
+import ProjectInfo from '../../../data/Projects';
+import './rocketboost.css';
+import { githubLinkRocketBoost } from '../../../component/links';
 
 const RocketBoost = () => {
   const project = ProjectInfo.find((p) => p.id === 1) || ProjectInfo[0];

@@ -1,19 +1,22 @@
 import { Link } from 'react-router-dom';
 import './Projects.css';
-import ProjectInfo from '../../data/Projects';
+import ProjectInfo from '../../../data/Projects';
 
-import RocketBoostCard from '../../assets/RocketboostCard.png';
-import CodeCampusCard from '../../assets/CodeCampus1.png';
-import Construction from '../../assets/Untitled.jpg';
+import RocketBoostCard from '../../../assets/RocketBoostProject/RocketboostCard.png';
+import CodeCampusCard from '../../../assets/CodeCampusProject/CodeCampusDetail.png';
+import WorkoutAppCard from '../../../assets/WorkoutAppProject/WorkoutAppOverzicht.png';
+import Construction from '../../../assets/Untitled.jpg';
 
 const cardImages = {
   1: RocketBoostCard,
   2: CodeCampusCard,
+  3: WorkoutAppCard,
 };
 
 const projectRoutes = {
   1: '/rocketboost',
   2: '/codecampus',
+  3: '/workoutapp',
 };
 
 const Projects = () => {
@@ -35,7 +38,7 @@ const Projects = () => {
 
       <div className="projects-grid">
         {ProjectInfo.map((project, i) => {
-          const isReal = project.id === 1 || project.id === 2;
+          const isReal = project.id === 1 || project.id === 2 || project.id === 3;
 
           const img = cardImages[project.id] || Construction;
 

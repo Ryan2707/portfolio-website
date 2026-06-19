@@ -3,10 +3,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Home from './pages/Home/Home';
 import AboutMe from './pages/About/AboutMe';
-import Projects from './pages/Projects/Projects';
+import Projects from './pages/Projects/ProjectPage/Projects';
 import Contact from './pages/Contact/Contact';
-import RocketBoost from './components/RocketBoost';
-import CodeCampus from './components/CodeCampus';
+import RocketBoost from './pages/Projects/RocketBoost/RocketBoost';
+import CodeCampus from './pages/Projects/CodeCampus/CodeCampus';
+import WorkoutApp from './pages/Projects/WorkoutApp/WorkoutApp';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/rocketboost" element={<RocketBoost />} />
           <Route path="/codecampus" element={<CodeCampus />} />
+          <Route path="/workoutapp" element={<WorkoutApp />} />
         </Routes>
       </div>
     </BrowserRouter>
