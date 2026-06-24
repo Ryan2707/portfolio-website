@@ -1,0 +1,101 @@
+.skill-tag.frontend,
+.project-tag.frontend {
+  color: var(--clr-purple-2);
+  border-color: rgba(124, 77, 255, 0.3);
+  background: var(--clr-purple-dim);
+}
+
+.skill-tag.frontend:hover,
+.project-tag.frontend:hover {
+  border-color: var(--clr-purple);
+  transform: translateY(-2px);
+}
+
+
+
+.skill-tag.backend,
+.project-tag.backend {
+  color: var(--clr-green);
+  border-color: rgba(0, 255, 160, 0.3);
+  background: var(--clr-green-dim);
+}
+
+.skill-tag.backend:hover,
+.project-tag.backend:hover {
+  border-color: var(--clr-green);
+  transform: translateY(-2px);
+}
+
+
+
+.skill-tag.database,
+.project-tag.database {
+  color: #4fc3f7;
+  border-color: rgba(79, 195, 247, 0.3);
+  background: rgba(79, 195, 247, 0.08);
+}
+
+.skill-tag.database:hover,
+.project-tag.database:hover {
+  border-color: rgba(79, 195, 247, 0.6);
+  transform: translateY(-2px);
+}
+
+
+
+.skill-tag.mobile,
+.project-tag.mobile {
+  color: #59c7ff;
+  border-color: rgba(89, 199, 255, 0.3);
+  background: rgba(89, 199, 255, 0.08);
+}
+
+.skill-tag.mobile:hover,
+.project-tag.mobile:hover {
+  transform: translateY(-2px);
+}
+
+
+
+.skill-tag.game,
+.project-tag.game {
+  color: #ffb86b;
+  border-color: rgba(255, 184, 107, 0.3);
+  background: rgba(255, 184, 107, 0.08);
+}
+
+.skill-tag.game:hover,
+.project-tag.game:hover {
+  transform: translateY(-2px);
+}
+
+
+
+.skill-tag.tool,
+.project-tag.tool {
+  color: var(--clr-text-muted);
+  border-color: rgba(136, 146, 164, 0.25);
+  background: rgba(136, 146, 164, 0.06);
+}
+
+.skill-tag.tool:hover,
+.project-tag.tool:hover {
+  color: var(--clr-text);
+  border-color: rgba(136, 146, 164, 0.45);
+  transform: translateY(-2px);
+}
+
+
+
+.skill-tag.learning,
+.project-tag.learning {
+  color: #ff79c6;
+  border-color: rgba(255, 121, 198, 0.3);
+  background: rgba(255, 121, 198, 0.08);
+}
+
+.skill-tag.learning:hover,
+.project-tag.learning:hover {
+  border-color: rgba(255, 121, 198, 0.6);
+  transform: translateY(-2px);
+}

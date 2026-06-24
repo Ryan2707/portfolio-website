@@ -1,16 +1,18 @@
 import { Link } from 'react-router-dom';
 import './Projects.css';
 import ProjectInfo from '../../../data/Projects';
-
-import RocketBoostCard from '../../../assets/RocketBoostProject/RocketboostCard.png';
-import CodeCampusCard from '../../../assets/CodeCampusProject/CodeCampusDetail.png';
-import WorkoutAppCard from '../../../assets/WorkoutAppProject/WorkoutAppOverzicht.png';
-import Construction from '../../../assets/Untitled.jpg';
+import '../../../data/SkillTags.css';
+import RocketBoostCard from '../../../assets/RocketBoostProject/RocketboostCard.webp';
+import CodeCampusCard from '../../../assets/CodeCampusProject/CodeCampusDetail.webp';
+import WorkoutAppCard from '../../../assets/WorkoutAppProject/WorkoutAppOverzicht.webp';
+import Construction from '../../../assets/Untitled.webp';
 
 const cardImages = {
   1: RocketBoostCard,
   2: CodeCampusCard,
   3: WorkoutAppCard,
+  4: Construction,
+  5: Construction,
 };
 
 const projectRoutes = {
@@ -38,7 +40,7 @@ const Projects = () => {
 
       <div className="projects-grid">
         {ProjectInfo.map((project, i) => {
-          const isReal = project.id === 1 || project.id === 2 || project.id === 3;
+          const isReal = !!projectRoutes[project.id];
 
           const img = cardImages[project.id] || Construction;
 
@@ -123,6 +125,7 @@ const Projects = () => {
               </div>
             </div>
           );
+          
         })}
       </div>
     </main>

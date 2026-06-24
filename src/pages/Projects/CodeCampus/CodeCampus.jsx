@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 import './CodeCampus.css';
 import ProjectInfo from '../../../data/Projects';
-
-import CodeCampusHome from '../../../assets/CodeCampusProject/CodeCampusHome.png';
-import CodeCampusCourses from '../../../assets/CodeCampusProject/CodeCampusCourses.png';
-import CodeCampusInstructors from '../../../assets/CodeCampusProject/CodeCampusInstructors.png';
-import CodeCampusProfile from '../../../assets/CodeCampusProject/CodeCampusProfile.png';
-import CodeCampusStats from '../../../assets/CodeCampusProject/CodeCampusStats.png';
-import CodeCampusProgress from '../../../assets/CodeCampusProject/CodeCampusProgress.png';
-import CodeCampusInstructorsProfile from '../../../assets/CodeCampusProject/CodeCampusInstructorProfile.png';
+import '../../../data/SkillTags.css';
+import CodeCampusHome from '../../../assets/CodeCampusProject/CodeCampusHome.webp';
+import CodeCampusCourses from '../../../assets/CodeCampusProject/CodeCampusCourses.webp';
+import CodeCampusInstructors from '../../../assets/CodeCampusProject/CodeCampusInstructors.webp';
+import CodeCampusProfile from '../../../assets/CodeCampusProject/CodeCampusProfile.webp';
+import CodeCampusStats from '../../../assets/CodeCampusProject/CodeCampusStats.webp';
+import CodeCampusProgress from '../../../assets/CodeCampusProject/CodeCampusProgress.webp';
+import CodeCampusInstructorsProfile from '../../../assets/CodeCampusProject/CodeCampusInstructorProfile.webp';
 
 const CodeCampus = () => {
   const project = ProjectInfo.find((p) => p.id === 2);

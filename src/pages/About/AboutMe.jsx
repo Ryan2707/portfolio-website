@@ -1,60 +1,14 @@
 import "./AboutMe.css";
-
-const frontendSkills = [
-  "React",
-  "Next.js",
-  "JavaScript",
-  "HTML5",
-  "CSS3",
-  "Tailwind CSS",
-  "Responsive Design",
-  "React Router",
-];
-
-const backendSkills = [
-  "Node.js",
-  "Express.js",
-  "Auth.js",
-  "JWT",
-  "REST APIs",
-  "CRUD Operations",
-  "Role-Based Access",
-  "Middleware",
-];
-
-const databaseSkills = [
-  "MongoDB",
-  "MongoDB Atlas",
-  "Mongoose",
-];
-
-const mobileSkills = [
-  "React Native",
-  "Expo",
-  "Navigation",
-  "AsyncStorage",
-];
-
-const gameSkills = [
-  "Unity",
-  "C#",
-  "Godot",
-  "GDScript",
-];
-
-const toolSkills = [
-  "Git",
-  "GitHub",
-  "VS Code",
-  "Figma",
-  "Postman",
-];
-
-const learningSkills = [
-  "TypeScript",
-  "PostgreSQL",
-  "Prisma ORM",
-];
+import '../../data/SkillTags.css';
+import {
+  frontendSkills,
+  backendSkills,
+  databaseSkills,
+  mobileSkills,
+  gameSkills,
+  toolSkills,
+  learningSkills,
+} from "../../data/Skills.js";
 
 const AboutMe = () => {
   return (

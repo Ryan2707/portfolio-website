@@ -1,11 +1,11 @@
 .project-detail {
+  padding: 4rem clamp(1.25rem, 5vw, 4rem);
   max-width: 1400px;
   margin: 0 auto;
-  padding: 120px 40px;
 }
 
 .project-section {
-  margin-top: 120px;
+  margin-top: 6rem;
 }
 
 .project-section h2 {
@@ -16,13 +16,13 @@
 .feature-showcase {
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 6rem;
 }
 
 .feature-item {
   display: grid;
   grid-template-columns: 1fr 1.6fr;
-  gap: 60px;
+  gap: 4rem;
   align-items: center;
 }
 
@@ -34,28 +34,15 @@
 .feature-content p {
   font-size: 1.05rem;
   line-height: 1.8;
-  color: #b8b8b8;
+  color: var(--clr-text-muted);
 }
 
 .feature-item img {
   width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--clr-border);
 }
 
-.learned-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  list-style: none;
-  padding: 0;
-}
-
-.learned-list li {
-  padding: 10px 18px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
-}
 
 @media (max-width: 1000px) {
   .feature-item {

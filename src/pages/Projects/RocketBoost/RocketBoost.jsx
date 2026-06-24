@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import ProjectInfo from '../../../data/Projects';
 import './rocketboost.css';
 import { githubLinkRocketBoost } from '../../../component/links';
+import '../../../data/SkillTags.css';
+
 
 const RocketBoost = () => {
   const project = ProjectInfo.find((p) => p.id === 1) || ProjectInfo[0];
@@ -16,9 +18,7 @@ const RocketBoost = () => {
         <div className="project-detail-info">
           <span className="section-label">// project details</span>
 
-          <h1>
-            <span>{project.title}</span>
-          </h1>
+<h1>{project.title}</h1>
 
           <div className="project-detail-tags">
             {(project.tags || []).map((t) => (
@@ -45,7 +45,7 @@ const RocketBoost = () => {
             <h3>Wat heb ik geleerd?</h3>
 
             <ul className="project-learned-list">
-              {project.learned.map((item) => (
+            {(project.learned || []).map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>

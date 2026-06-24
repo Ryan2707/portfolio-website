@@ -1,19 +1,19 @@
 import { Link } from 'react-router-dom';
 import './WorkoutApp.css';
 import ProjectInfo from '../../../data/Projects';
-
-import WorkoutAppActiveWorkout from '../../../assets/WorkoutAppProject/WorkoutAppActiveWorkout.png';
-import WorkoutAppAgenda from '../../../assets/WorkoutAppProject/WorkoutAppAgenda.png';
-import WorkoutAppInlog from '../../../assets/WorkoutAppProject/WorkoutAppInlog.png';
-import WorkoutAppNieuweWorkout from '../../../assets/WorkoutAppProject/WorkoutAppNieuweWorkout.png';
-import WorkoutAppOefeningen from '../../../assets/WorkoutAppProject/WorkoutAppOefeningen.png';
-import WorkoutAppOefeningenWorkoutDataBase from '../../../assets/WorkoutAppProject/WorkoutAppOefeningen-WorkoutDataBase.png';
-import WorkoutAppOefeningenVervangen from '../../../assets/WorkoutAppProject/WorkoutAppOefeningVervangen.png';
-import WorkoutAppOverzicht from '../../../assets/WorkoutAppProject/WorkoutAppOverzicht.png';
-import WorkoutAppRegistratie from '../../../assets/WorkoutAppProject/WorkoutAppRegistratie.png';
-import WorkoutAppTemplates from '../../../assets/WorkoutAppProject/WorkoutAppTemplates.png';
-import WorkoutAppUserDataBase from '../../../assets/WorkoutAppProject/WorkoutAppUserDataBase.png';
-import WorkoutAppWorkoutDataBase from '../../../assets/WorkoutAppProject/WorkoutAppWorkoutDataBase.png';
+import '../../../data/SkillTags.css';
+import WorkoutAppActiveWorkout from '../../../assets/WorkoutAppProject/WorkoutAppActiveWorkout.webp';
+import WorkoutAppAgenda from '../../../assets/WorkoutAppProject/WorkoutAppAgenda.webp';
+import WorkoutAppInlog from '../../../assets/WorkoutAppProject/WorkoutAppInlog.webp';
+import WorkoutAppNieuweWorkout from '../../../assets/WorkoutAppProject/WorkoutAppNieuweWorkout.webp';
+import WorkoutAppOefeningen from '../../../assets/WorkoutAppProject/WorkoutAppOefeningen.webp';
+import WorkoutAppOefeningenWorkoutDataBase from '../../../assets/WorkoutAppProject/WorkoutAppOefeningen-WorkoutDataBase.webp';
+import WorkoutAppOefeningenVervangen from '../../../assets/WorkoutAppProject/WorkoutAppOefeningVervangen.webp';
+import WorkoutAppOverzicht from '../../../assets/WorkoutAppProject/WorkoutAppOverzicht.webp';
+import WorkoutAppRegistratie from '../../../assets/WorkoutAppProject/WorkoutAppRegistratie.webp';
+import WorkoutAppTemplates from '../../../assets/WorkoutAppProject/WorkoutAppTemplates.webp';
+import WorkoutAppUserDataBase from '../../../assets/WorkoutAppProject/WorkoutAppUserDataBase.webp';
+import WorkoutAppWorkoutDataBase from '../../../assets/WorkoutAppProject/WorkoutAppWorkoutDataBase.webp';
 
 const WorkoutApp = () => {
   const project = ProjectInfo.find((p) => p.id === 3);
@@ -60,7 +60,16 @@ const WorkoutApp = () => {
             <h3>Mijn bijdrage</h3>
 
             <ul className="project-learned-list">
-              <li></li>
+  <li>Ontwikkelen van registratiefunctionaliteit</li>
+  <li>Implementeren van gebruikersauthenticatie met Auth.js</li>
+  <li>Ontwikkelen van het inlogsysteem</li>
+  <li>Beveiligd opslaan van wachtwoorden met bcryptjs</li>
+  <li>Werken met gebruikers-ID's en sessiebeheer</li>
+  <li>Ontwikkelen van oefeningenbeheer (toevoegen en verwijderen)</li>
+  <li>Implementeren van actieve workout tracking</li>
+  <li>Ontwikkelen van workout templates</li>
+  <li>Ontwikkelen van API-routes voor gegevensbeheer</li>
+  <li>Koppelen van gebruikersdata aan MongoDB Atlas</li>
             </ul>
           </div>
 
@@ -105,8 +114,9 @@ const WorkoutApp = () => {
             <div className="feature-content">
               <h3>Registratie</h3>
               <p>
-                Nieuwe gebruikers kunnen een account aanmaken om hun workouts,
-                trainingsgegevens en voortgang op te slaan.
+                Nieuwe gebruikers kunnen een account aanmaken om toegang te krijgen tot
+                hun persoonlijke trainingsomgeving. Tijdens registratie worden
+                wachtwoorden veilig gehasht voordat ze worden opgeslagen in de database.
               </p>
             </div>
 
@@ -118,8 +128,9 @@ const WorkoutApp = () => {
             <div className="feature-content">
               <h3>Inloggen</h3>
               <p>
-                Gebruikers kunnen veilig inloggen om toegang te krijgen tot hun
-                persoonlijke trainingsomgeving.
+                Gebruikers kunnen veilig inloggen via Auth.js. Na authenticatie krijgen
+                zij toegang tot hun persoonlijke workouts, oefeningen, templates en
+                geplande trainingen.
               </p>
             </div>
 
@@ -131,8 +142,9 @@ const WorkoutApp = () => {
             <div className="feature-content">
               <h3>Gebruikersdatabase</h3>
               <p>
-                Alle gebruikersgegevens worden centraal opgeslagen zodat
-                accounts, instellingen en trainingsinformatie behouden blijven.
+                Gebruikersgegevens worden opgeslagen in MongoDB Atlas en gekoppeld aan een
+                unieke gebruikers-ID. Hierdoor heeft iedere gebruiker uitsluitend toegang
+                tot zijn eigen trainingsdata.
               </p>
             </div>
 
