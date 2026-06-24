@@ -93,38 +93,52 @@ const Projects = () => {
             );
           }
 
-          return (
-            <div
-              key={project.id}
-              className="project-card coming-soon"
+ return (
+  <div
+    key={project.id}
+    className="project-card coming-soon"
+  >
+    <span className="coming-soon-badge">
+      Projectpagina volgt
+    </span>
+
+    <div className="project-card-img-wrap">
+      <img
+        src={img}
+        alt={project.title}
+        className="project-card-img"
+        loading="lazy"
+      />
+    </div>
+
+    <div className="project-card-body">
+      <span className="project-card-number">
+        {String(i + 1).padStart(2, '0')}
+      </span>
+
+      <h2 className="project-card-title">
+        {project.title}
+      </h2>
+
+      <p className="project-card-desc">
+        {project.shortDescription}
+      </p>
+
+      {project.tags?.length > 0 && (
+        <div className="project-card-tags">
+          {project.tags.map((tag) => (
+            <span
+              key={tag.name}
+              className={`project-tag ${tag.type}`}
             >
-              <span className="coming-soon-badge">
-                Binnenkort
-              </span>
-
-              <div className="project-card-img-wrap">
-                <img
-                  src={img}
-                  alt="Binnenkort beschikbaar"
-                  className="project-card-img"
-                />
-              </div>
-
-              <div className="project-card-body">
-                <span className="project-card-number">
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-
-                <h2 className="project-card-title">
-                  {project.title}
-                </h2>
-
-                <p className="project-card-desc">
-                  Nieuw project volgt binnenkort.
-                </p>
-              </div>
-            </div>
-          );
+              {tag.name}
+            </span>
+          ))}
+        </div>
+      )}
+    </div>
+  </div>
+);
           
         })}
       </div>

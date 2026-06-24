@@ -1,6 +1,7 @@
 import RocketboostDetail from '../assets/RocketBoostProject/RocketboostDetail.webp';
 import CodeCampusDetail from '../assets/CodeCampusProject/CodeCampusDetail.webp';
 import WorkoutAppOverview from '../assets/WorkoutAppProject/WorkoutAppOverzicht.webp';
+
 const ProjectInfo = [
   {
     id: 1,
@@ -88,7 +89,7 @@ const ProjectInfo = [
 { name: 'Mongoose', type: 'database' },
 ],
 
-  github: 'https://github.com/Ryan7931/',
+  github: 'https://github.com/Ryan2707/Proefexamen-WorkoutApp-Ryan.KM-Ryan.KV',
 
 
     shortDescription:
@@ -118,23 +119,32 @@ purpose:
   'Team Collaboration',
   ],},
 
-  {
-    id: 4,
-    title: 'Mobile App',
-    image: null,
-    tags: [],
-    shortDescription: 'Nieuw project volgt binnenkort.',
-    description: '',
-    purpose: '',
-    learned: [],
-  },
+{
+  id: 4,
+  title: 'Mobile App',
+  image: null,
+
+  tags: [
+    { name: 'React Native', type: 'mobile' },
+    { name: 'Expo', type: 'mobile' },
+    { name: 'Navigation', type: 'mobile' },
+    { name: 'AsyncStorage', type: 'mobile' },
+  ],
+
+  shortDescription:
+    'Mobiele applicatie ontwikkeld met React Native en Expo.',
+
+  description: '',
+  purpose: '',
+  learned: [],
+},
 
     {
     id: 5,
     title: 'MERN Stack Exercise App',
     image: null,
     tags: [],
-    shortDescription: 'Nieuw project volgt binnenkort.',
+    shortDescription: 'Een MERN Stack exercise applicatie.',
     description: '',
     purpose: '',
     learned: [],
